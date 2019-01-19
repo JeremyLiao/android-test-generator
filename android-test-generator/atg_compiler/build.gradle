@@ -1,0 +1,21 @@
+import org.gradle.internal.jvm.Jvm
+
+apply plugin: 'java'
+
+repositories {
+    mavenLocal()
+    jcenter()
+    google()
+}
+
+dependencies {
+    implementation 'com.google.auto.service:auto-service:1.0-rc2'
+    implementation 'com.squareup:javapoet:1.11.1'
+    implementation 'junit:junit:4.12'
+    implementation 'com.android.support.test:runner:1.0.2'
+    implementation project(':atg_annotation')
+    compileOnly files(Jvm.current().getToolsJar())
+}
+
+sourceCompatibility = "1.7"
+targetCompatibility = "1.7"
