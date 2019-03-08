@@ -18,3 +18,16 @@ Feature: 主界面测试
         And 点击测试三
         Then 显示123456789
         Then 退出主界面
+
+    Scenario: 测试四
+        Given 进入主界面
+        When 滚动到显示测试四
+        And 点击测试四
+        Then 显示测试四已点击
+        Then 退出主界面
+
+    Scenario: 测试五
+        Given 进入主界面
+        When 点击测试五
+        Then 控件.tv_status显示文字测试五已点击
+        Then 退出主界面

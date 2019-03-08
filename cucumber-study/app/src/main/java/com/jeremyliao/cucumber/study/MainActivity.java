@@ -41,4 +41,12 @@ public class MainActivity extends AppCompatActivity {
         String s = editSearch.getText().toString();
         showSimpleDialog(s);
     }
+
+    public void onClickTest4(View v) {
+        showSimpleDialog("测试四已点击");
+    }
+
+    public void onClickTest5(View v) {
+        tvStatus.setText("测试五已点击");
+    }
 }
