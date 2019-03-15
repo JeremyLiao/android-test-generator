@@ -14,7 +14,9 @@ public @interface TestCase {
 
     String inputs() default "";
 
-    boolean checkOutout() default false;
+    boolean checkReturn() default false;
+
+    boolean isStatic() default false;
 
     String checkVariable() default "";
 

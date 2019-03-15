@@ -1,1 +1,4 @@
-include ':app', ':atg_annotation', ':atg_compiler', ':atg_plugin'
+include ':app'
+include ':atg:base'
+include ':atg:compiler'
+include ':atg:plugin'

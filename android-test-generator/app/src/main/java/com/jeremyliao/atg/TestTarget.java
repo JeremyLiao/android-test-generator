@@ -16,12 +16,12 @@ public class TestTarget {
         return value;
     }
 
-    @TestCase(inputs = "3,2", checkOutout = true, expect = "5")
+    @TestCase(inputs = "3,2", checkReturn = true, expect = "5")
     public int add(int a, int b) {
         return a + b;
     }
 
-    @TestCase(inputs = "3,\"ret\"", checkOutout = true, expect = "ret: 3")
+    @TestCase(inputs = "3,ret", checkReturn = true, expect = "ret: 3")
     public String mergeIntString(int a, String b) {
         return b + ": " + a;
     }

@@ -9,6 +9,11 @@ android {
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [createTestCase: 'true']
+            }
+        }
     }
     buildTypes {
         release {
@@ -26,6 +31,6 @@ dependencies {
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
 
-    implementation project(':atg_annotation')
-    annotationProcessor project(':atg_compiler')
+    implementation project(':atg:base')
+    annotationProcessor project(':atg:compiler')
 }
